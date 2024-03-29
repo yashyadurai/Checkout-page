@@ -2,7 +2,7 @@
     box-sizing: content-box;
 }
 body {
-    background-image: url(/third/images/pattern-background-desktop.svg) ;
+    background-image: url(/images/pattern-background-desktop.svg) ;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -38,7 +38,7 @@ h1 {
 
 .sub-container-1 {
     border: solid 2px;
-    background: url(/third/images/illustration-hero.svg);
+    background: url(/images/illustration-hero.svg);
     background-size: auto;  
     background-repeat: no-repeat;
     background-position: center;
