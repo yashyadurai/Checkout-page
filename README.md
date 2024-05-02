@@ -1,8 +1,1 @@
-asasd
-sad
-asd
-asd
-asd
-as
-das
-d
+This is a checkout page can be used to make display the payment..
