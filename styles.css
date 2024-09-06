@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 * {
    box-sizing: content-box;
     --Paleblue: hsl(225, 100%, 94%);
@@ -21,10 +22,9 @@ body {
 .main-container {
     background-color: white;
     width: 100%;
-    max-width: 425px;
+    max-width: 450px;
     border: 0px ;
     border-radius: 20px;
-    /* padding: 0 0 50px 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,13 +38,18 @@ body {
 }
 h1 {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 #description {
     text-align: center;
-    /* padding: 0 30px 0 30px; */
     color: var(--DesaturatedBlue);
-    font-family: sans-serif;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .sub-container-1 {
@@ -69,25 +74,36 @@ h1 {
     border-radius: 10px;
     margin: 0px auto 15px auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 325px;
+    padding: 0 20px;
+}
+strong{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 #music_icon {
     border: 0px;
     margin-top: 15px;
-    margin-left: 6px;
+    margin-left: 0;
 }
 
 #music-div #annual-plan, #cost,#music_icon {
     border: 0;
 }
 #change {
-    padding: 0 2px 0 40px;
+    padding-left: 0;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 0;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: 0;
     text-decoration: none;
     color: var(--Brightblue);
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .Button {
@@ -97,17 +113,20 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
 }
 .Button .buttonOfSelection {
     font-size: medium;
     color: white;
     background-color: var(--Brightblue);
     border: 0;
-    padding: 10px;
+    padding: 15px;
     border-radius: 6px;
-    width: 250px;
+    width: 325px;
     cursor: pointer;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 .buttonOfSelection:hover{
     background-color: var(--Darkblue);
@@ -116,12 +135,16 @@ h1 {
     background-color: var(--VerypaleBlue);
     color: var(--Darkblue);
     border: 0;
-    padding: 10px;
-    width: 250px;
+    padding: 15px;
+    width: 325px;
     font-family:Verdana, sans-serif;
     font-size: small;
     cursor: pointer;
     border-radius: 6px;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 #price {
     color: grey;
