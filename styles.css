@@ -1,0 +1,122 @@
+* {
+    box-sizing: content-box;
+}
+body {
+    background-image: url(images/pattern-background-desktop.svg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    border: 0;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-container {
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 425px;
+    border: 0px ;
+    border-radius: 20px;
+    /* padding: 0 0 50px 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 10px 50px #cddbff;
+}
+#textContainer{
+    padding: 50px;
+}
+h1 {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#description {
+    text-align: center;
+    /* padding: 0 30px 0 30px; */
+    font-family: sans-serif;
+}
+
+.sub-container-1 {
+    border: solid 2px;
+    background: url(images/illustration-hero.svg);
+    background-size: auto;  
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    border-radius: 11px 11px 0px 0px;
+    object-fit: cover;
+    border: 0;
+    height: 207px;
+}
+.sub-container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0px;
+    background-color: #cddbff;
+    border-radius: 10px;
+    margin: 0px auto 15px auto;
+    width: 100%;
+    max-width: 270px;
+}
+#music_icon {
+    border: 0px;
+    margin-top: 15px;
+    margin-left: 6px;
+}
+
+#music-div #annual-plan, #cost,#music_icon {
+    border: 0;
+}
+#change {
+    padding: 0 2px 0 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.Button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.Button .buttonOfSelection {
+    font-size: medium;
+    color: white;
+    background-color: #412fe4;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+.buttonOfCancellation {
+    background-color: aliceblue;
+    color: gray;
+    border: 0;
+    padding: 10px;
+    width: 250px;
+    font-family:Verdana, sans-serif;
+    font-size: small;
+    cursor: pointer;
+}
+#price {
+    padding-top: calc(100px - 120px) ;
+    margin-top: calc(100px - 110px);
+    margin-left: 5px;
+    color: grey;
+}
+#annual-plan {
+    margin-left: 10px;
+}
