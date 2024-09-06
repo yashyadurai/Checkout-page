@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 * {
-    box-sizing: content-box;
+   box-sizing: content-box;
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --VerypaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
 }
 body {
     background-image: url(images/pattern-background-desktop.svg) ;
@@ -14,12 +20,11 @@ body {
     transform: translate(-50%, -50%);
 }
 .main-container {
-    background-color: aliceblue;
+    background-color: white;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     border: 0px ;
     border-radius: 20px;
-    padding: 0 0 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,14 +33,23 @@ body {
     overflow: hidden;
     box-shadow: 10px 10px 50px #cddbff;
 }
+#textContainer{
+    padding: 50px;
+}
 h1 {
-    margin: 30px auto 0px auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 #description {
     text-align: center;
-    padding: 0 30px 0 30px;
-    font-family: sans-serif;
+    color: var(--DesaturatedBlue);
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .sub-container-1 {
@@ -44,41 +58,52 @@ h1 {
     background-size: auto;  
     background-repeat: no-repeat;
     background-position: center;
-    /*aspect-ratio: 20/ 9;*/
     width: 100%;
-    background-size: cover;
     border-radius: 11px 11px 0px 0px;
     object-fit: cover;
     border: 0;
-    height: 200px;
+    height: 207px;
 }
 .sub-container-2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: 0px;
-    background-color: #cddbff;
+    border: 0;
+    background-color: var(--VerypaleBlue);
     border-radius: 10px;
     margin: 0px auto 15px auto;
     width: 100%;
-    max-width: 270px;
+    max-width: 325px;
+    padding: 0 20px;
+}
+strong{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 #music_icon {
     border: 0px;
     margin-top: 15px;
-    margin-left: 6px;
+    margin-left: 0;
 }
 
 #music-div #annual-plan, #cost,#music_icon {
     border: 0;
 }
 #change {
-    padding: 0 2px 0 40px;
+    padding-left: 0;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 0;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    text-decoration: none;
+    color: var(--Brightblue);
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .Button {
@@ -88,32 +113,40 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
 }
 .Button .buttonOfSelection {
     font-size: medium;
     color: white;
-    background-color: #412fe4;
+    background-color: var(--Brightblue);
     border: 0;
-    padding: 10px;
-    border-radius: 5px;
-    width: 250px;
+    padding: 15px;
+    border-radius: 6px;
+    width: 325px;
     cursor: pointer;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.buttonOfSelection:hover{
+    background-color: var(--Darkblue);
 }
 .buttonOfCancellation {
-    background-color: aliceblue;
-    color: gray;
+    background-color: var(--VerypaleBlue);
+    color: var(--Darkblue);
     border: 0;
-    padding: 10px;
-    width: 250px;
+    padding: 15px;
+    width: 325px;
     font-family:Verdana, sans-serif;
     font-size: small;
     cursor: pointer;
+    border-radius: 6px;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 #price {
-    padding-top: calc(100px - 120px) ;
-    margin-top: calc(100px - 110px);
-    margin-left: 5px;
     color: grey;
 }
 #annual-plan {
