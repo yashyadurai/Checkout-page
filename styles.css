@@ -1,5 +1,10 @@
 * {
-    box-sizing: content-box;
+   box-sizing: content-box;
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --VerypaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
 }
 body {
     background-image: url(images/pattern-background-desktop.svg) ;
@@ -14,7 +19,7 @@ body {
     transform: translate(-50%, -50%);
 }
 .main-container {
-    background-color: aliceblue;
+    background-color: white;
     width: 100%;
     max-width: 425px;
     border: 0px ;
@@ -38,6 +43,7 @@ h1 {
 #description {
     text-align: center;
     /* padding: 0 30px 0 30px; */
+    color: var(--DesaturatedBlue);
     font-family: sans-serif;
 }
 
@@ -58,12 +64,12 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: 0px;
-    background-color: #cddbff;
+    border: 0;
+    background-color: var(--VerypaleBlue);
     border-radius: 10px;
     margin: 0px auto 15px auto;
     width: 100%;
-    max-width: 270px;
+    max-width: 300px;
 }
 #music_icon {
     border: 0px;
@@ -80,6 +86,8 @@ h1 {
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 20px;
+    text-decoration: none;
+    color: var(--Brightblue);
 }
 
 .Button {
@@ -94,27 +102,28 @@ h1 {
 .Button .buttonOfSelection {
     font-size: medium;
     color: white;
-    background-color: #412fe4;
+    background-color: var(--Brightblue);
     border: 0;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     width: 250px;
     cursor: pointer;
 }
+.buttonOfSelection:hover{
+    background-color: var(--Darkblue);
+}
 .buttonOfCancellation {
-    background-color: aliceblue;
-    color: gray;
+    background-color: var(--VerypaleBlue);
+    color: var(--Darkblue);
     border: 0;
     padding: 10px;
     width: 250px;
     font-family:Verdana, sans-serif;
     font-size: small;
     cursor: pointer;
+    border-radius: 6px;
 }
 #price {
-    padding-top: calc(100px - 120px) ;
-    margin-top: calc(100px - 110px);
-    margin-left: 5px;
     color: grey;
 }
 #annual-plan {
